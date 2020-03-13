@@ -1,18 +1,22 @@
 class UserProfile {
-    private username: string;
+    private userName: string;
     private age: number;
 
     // Normal way of implementing  getters and setters
-    getName = () => {return this.username};
+    getName = () => {return this.userName};
     
     setName = (nameparam: string) => { 
         if(nameparam.length < 0) {
             throw new Error('UserName cannot be blank.');
         }
-        this.username = nameparam;
+        this.userName = nameparam;
     }
     
-    constructor(private x?: string) {this.username = x};   
+    set USERNAME(name) {
+        this.userName = name;
+    }
+
+    constructor(private x?: string) {this.userName = x};   
 
     // Using getters and setters directly in a different way is called Properties in Typescript
     get AGE() {
@@ -39,6 +43,7 @@ myUserProfile.printUserName();
 myUserProfile.setName('Murugan Nagarajan');
 console.log(myUserProfile.AGE);
 myUserProfile.AGE = 24;
+myUserProfile.USERNAME = 'MURUGAN425'
 myUserProfile.printUserAge();
 myUserProfile.printUserName(); 
 
