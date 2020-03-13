@@ -17,7 +17,7 @@ var msg = "My name is murugan"
 
 
 //Point 2: To define the scope of variables within the if/else/for/etc blocks instead of functional level.
-function showCompanyName( name ) {
+function showCompanyName( name: string ) {
     var msg = "Before moving to if condition";
     if ( name == "Infosys" ) {
         var msg = "Inside IF condition :  Employee of " + name;
@@ -27,7 +27,7 @@ function showCompanyName( name ) {
 showCompanyName( "Infosys" );
 
 //Now try the same above logic using let keyword
-function showCompanyNameUsingLet( name ) {
+function showCompanyNameUsingLet( name: string ) {
     let lmsg = "Before If Condition";
     if ( name == "Infosys" ) {
         let lscope = "Scope is only inside if condition"

@@ -12,7 +12,7 @@ export class UserDetail {
         this.username = nameparam;
     }
     
-    constructor(private x?: string) {this.username = x};   
+    constructor(private x: string) {this.username = x};   
 
     // Using getters and setters directly in a different way is called Properties in Typescript
     get AGE() {

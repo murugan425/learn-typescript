@@ -1,8 +1,8 @@
 class Employee {
-    name: string;
-    experience: number;
-    gratitude: number;
-    salary: number;
+    name!: string;
+    experience!: number;
+    gratitude!: number;
+    salary!: number;
 
     // implementation of funcation is not possible in interface
     // so we start using classes
