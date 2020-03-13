@@ -12,7 +12,7 @@ class UserProfile {
         this.userName = nameparam;
     }
     
-    set USERNAME(name) {
+    set USERNAME(name: string) {
         this.userName = name;
     }
 
